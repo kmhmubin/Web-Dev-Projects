@@ -305,6 +305,37 @@ nav {
 
 /* contact section end */
 
+/* footer section start */
+
+/*FOOTER SECTION */
+footer {
+  background: var(--background-color);
+  color: white;
+  display: flex;
+  padding: 3rem 5%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+footer h4 {
+  flex: 3 1 40rem;
+  font-size: calc(1.4rem + 1vw);
+}
+
+button:focus {
+  background: var(--background-color);
+  color: white;
+}
+input:focus {
+  border: 4px solid rgb(148, 148, 197);
+}
+
+/* footer section end */
 /* animations */
 
 @keyframes opening {
@@ -333,3 +364,5 @@ nav {
   }
 }
 /* animation end */
+
+/* media query */
