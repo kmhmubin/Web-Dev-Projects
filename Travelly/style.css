@@ -55,6 +55,12 @@ button:hover {
   background: #27394e;
 }
 
+button:focus {
+  background: #2c3f57;
+  outline-style: solid;
+  outline-color: cornflowerblue;
+}
+
 /* Nav section with hero */
 
 .main-head {
@@ -254,6 +260,39 @@ nav ul {
   padding: 1rem 3rem;
 }
 
+/* footer section */
+
+footer {
+  color: white;
+  background: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  height: 3rem;
+  width: 100%;
+}
 /* cloud animation */
 
 @keyframes cloudAnimation {
@@ -295,5 +334,17 @@ nav ul {
 
   .form-wrapper {
     width: 100%;
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer h5 {
+    padding-bottom: 3rem;
   }
 }
