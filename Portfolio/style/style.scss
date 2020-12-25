@@ -1,3 +1,21 @@
+// variables
+$h1: 2.5rem;
+$h2: 4rem;
+$h3: 2.5rem;
+$h4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color: #154353;
+$gray-text: #2c2c2c;
+
+// flex function
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
 // import
 
 @import "global";
