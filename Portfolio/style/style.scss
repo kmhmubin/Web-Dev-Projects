@@ -7,6 +7,7 @@ $text: 2.5rem;
 $gradient: linear-gradient(left, #38d39f, #38a4d3);
 $background-color: #154353;
 $gray-text: #2c2c2c;
+$active-gradient: linear-gradient(left, #a1c4fd, #c2e9fb);
 
 // flex function
 @mixin flex($justify, $align, $direction) {

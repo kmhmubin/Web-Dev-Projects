@@ -7,3 +7,42 @@
 html {
   font-size: 62.5%;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h3 {
+  font-size: $h3;
+}
+
+h4,
+h5 {
+  font-size: $h4;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: $text;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $gray-text;
+}

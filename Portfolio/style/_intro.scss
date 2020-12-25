@@ -1,0 +1,136 @@
+.main-head {
+  width: 95%;
+  margin: 0 0 0 auto;
+}
+
+nav {
+  @include flex(space-between, center, row);
+  min-height: 10vh;
+  width: 60%;
+  flex-wrap: wrap;
+  //   nav logo
+  .logo {
+    @include flex(flex-start, center, row);
+    flex: 1 1 10rem;
+    h1 {
+      margin: 2rem;
+    }
+  }
+  // nav ul link
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 40rem;
+  }
+}
+
+.intro {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  @include flex(space-between, center, row);
+
+  //   intro name text
+  h2 {
+    font-size: 8rem;
+    padding-top: 2rem;
+    background: $gradient;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+
+  //   intro status text
+  h3 {
+    font-size: 6rem;
+    padding: 2rem 0rem;
+  }
+
+  //   intro small bio
+  p {
+    padding-top: 2rem;
+    color: $gray-text;
+  }
+}
+
+// splash image
+.splash {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  //   go behind of the text
+  z-index: -1;
+}
+
+// social link
+.intro-social {
+  margin-top: 4rem;
+  a {
+    margin-right: 5rem;
+  }
+}
+
+// active link
+.active {
+  background: $active-gradient;
+  color: $gray-text;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+// intro image and intro text side by side and wrap
+.intro-text,
+.intro-images {
+  flex: 1 1 40rem;
+}
+
+// animating the leafs
+#plant-left {
+  animation: plant 1.5s ease infinite alternate;
+}
+
+#plant-right {
+  animation: plant 1.5s ease infinite alternate 0.5s;
+}
+
+// animating the human
+#me {
+  animation: me 1s ease infinite alternate;
+  transform-origin: bottom;
+}
+
+// animating clock arrow
+#clock-arrow {
+  animation: clock 1.5s infinite linear;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+// animation
+@keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-30%);
+  }
+}
+
+@keyframes me {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
