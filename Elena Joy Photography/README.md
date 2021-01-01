@@ -2,6 +2,10 @@
 
 This website build on HTML5 and CSS3 Flexbox and Grid only.
 
+## Live Deom
+
+[Elena Joy Photography](https://elated-sinoussi-e2bc01.netlify.app)
+
 ## Demo
 
 <figure>
